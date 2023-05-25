@@ -84,9 +84,22 @@ button:focus-visible {
   z-index: 10000;
 }
 
+.navbar.navbar-light.bg-light {
+  background-color: transparent !important;
+}
+
+.navbar>.container>.navbar-brand {
+  color: white
+}
+
+.navbar-nav>.nav-link {
+  color: white;
+}
+
 .nav-link:hover {
   /* transition: 100ms; */
   border-bottom: 5px solid;
+  color: white!important;
 }
 
 .shop-now-button:hover {
