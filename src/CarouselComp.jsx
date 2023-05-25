@@ -8,7 +8,7 @@ import ICON_ARROW from './assets/icon-arrow.svg'
 export default function CarouselComp() {
     return (
         <div>
-            <Carousel slide={false} interval={60000} controls={false} indicators={false} pause='hover'>
+            <Carousel slide={false} interval={3000} controls={false} indicators={false} pause='hover'>
                 <Carousel.Item>
                     <div className='d-flex flex-column flex-md-row align-items-center justify-content-center'>
                         <img
@@ -29,14 +29,12 @@ export default function CarouselComp() {
 
                 <Carousel.Item>
                     <div className='d-flex flex-column flex-md-row align-items-center justify-content-center'>
-                        <div className='flex-fill'>
-                            <img
-                                className="d-block w-100 img-responsive flex-fill"
-                                src={DESKTOP_IMAGE_HERO_2}
-                                alt="First slide"
+                        <img
+                            className="d-block w-100 img-responsive flex-fill"
+                            src={DESKTOP_IMAGE_HERO_2}
+                            alt="First slide"
 
-                            />
-                        </div>
+                        />
                         <div className='flex-fill carousel-description-wrapper' >
                             <h1 style={{ lineHeight: '40px' }}>We are available all across the globe</h1>
                             <p className='mt-4 description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, error possimus repellendus doloremque sequi totam velit expedita omnis corrupti culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus vitae corrupti explicabo eius. Consequuntur corporis voluptatibus corrupti at exercitationem?</p>
