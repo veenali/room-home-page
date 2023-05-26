@@ -99,7 +99,7 @@ button:focus-visible {
 .nav-link:hover {
   /* transition: 100ms; */
   border-bottom: 5px solid;
-  color: white!important;
+  color: white !important;
 }
 
 .shop-now-button:hover {
@@ -107,7 +107,30 @@ button:focus-visible {
 }
 
 .carousel-description-wrapper {
-  padding: 0 140px;
+  padding: 0 80px;
+}
+
+.carousel-button {
+  padding: 20px 30px;
+  background: black
+}
+
+.carousel-button.carousel-left-button {
+  position: absolute;
+  bottom: 0;
+  right: -74px;
+}
+
+.carousel-button.carousel-right-button {
+  position: absolute;
+  bottom: 0;
+  /* left: calc(50% + 154px); */
+  right: -148px;
+}
+
+.carousel-button:hover {
+  background-color: hsl(0, 0%, 27%);
+  cursor: pointer;
 }
 
 .about-us-description-wrapper {
@@ -116,11 +139,35 @@ button:focus-visible {
 }
 
 @media only screen and (max-width:991px) {
+  .navbar.navbar-light.bg-light {
+    background-color: hsl(0, 0%, 100%) !important;
+  }
+
+  .navbar>.container>.navbar-brand {
+    color: black
+  }
+
+  .navbar-nav>.nav-link {
+    color: black;
+  }
+
   .carousel-description-wrapper {
     padding: 30px
   }
 
   .about-us-description-wrapper {
     padding: 30px;
+  }
+
+  .carousel-button.carousel-right-button {
+    bottom: 0;
+    left: auto;
+    right: 0;
+  }
+
+  .carousel-button.carousel-left-button {
+    bottom: 0;
+    left: auto;
+    right: 74px;
   }
 }

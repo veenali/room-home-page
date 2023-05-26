@@ -10,7 +10,7 @@ export default function AboutComp() {
             </div>
             <div className='flex-fill about-us-description-wrapper'>
                 <p style={{ letterSpacing: '10px', textTransform: 'uppercase', fontWeight: 700 }}>About our furniture</p>
-                <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, error possimus repellendus doloremque sequi totam velit expedita omnis corrupti culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus vitae corrupti explicabo eius. Consequuntur corporis voluptatibus corrupti at exercitationem?</p>
+                <p className='description'>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
             </div>
             <div className='flex-fill'>
                 <img src={ABOUT_IMAGE_LIGHT} alt="" className='img-responsive' />
