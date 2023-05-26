@@ -93,13 +93,31 @@ button:focus-visible {
 }
 
 .navbar-nav>.nav-link {
-  color: white;
+  color: white !important;
 }
 
-.nav-link:hover {
-  /* transition: 100ms; */
-  border-bottom: 5px solid;
-  color: white !important;
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  width: 0%;
+  position: absolute;
+  height: 3px;
+  background-color: white;
+  color: white;
+  bottom: 0;
+  left: 30%;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.nav-link:hover::after {
+  content: '';
+  opacity: 1;
+  width: 25px;
+  color: white;
 }
 
 .shop-now-button:hover {
@@ -144,11 +162,11 @@ button:focus-visible {
   }
 
   .navbar>.container>.navbar-brand {
-    color: black
+    color: black !important;
   }
 
   .navbar-nav>.nav-link {
-    color: black;
+    color: black !important;
   }
 
   .carousel-description-wrapper {

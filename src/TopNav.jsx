@@ -5,14 +5,14 @@ export default function TopNav() {
     return (
         <Navbar bg="light" expand="md" fixed='top'>
             <Container>
-                <Navbar.Brand href="#home" className='fs-3 fw-bold'>room</Navbar.Brand>
+                <Navbar.Brand href="#" className='fs-3 fw-bold'>room</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto fw-bold fs-5">
-                        <Nav.Link href="#home" className='ms-md-5'>home</Nav.Link>
-                        <Nav.Link href="#link" className='ms-md-5'>shop</Nav.Link>
-                        <Nav.Link href="#link" className='ms-md-5'>about</Nav.Link>
-                        <Nav.Link href="#link" className='ms-md-5'>contact</Nav.Link>
+                        <Nav.Link href="#" className='ms-md-5'>home</Nav.Link>
+                        <Nav.Link href="#" className='ms-md-5'>shop</Nav.Link>
+                        <Nav.Link href="#" className='ms-md-5'>about</Nav.Link>
+                        <Nav.Link href="#" className='ms-md-5'>contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
